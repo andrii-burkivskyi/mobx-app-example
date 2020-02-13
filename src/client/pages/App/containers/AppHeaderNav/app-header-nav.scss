@@ -1,0 +1,35 @@
+@import "../../../../assets";
+
+.container {
+    display: flex;
+    padding: 0 10px;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+}
+
+.menu_item_icon {
+    margin: 0 10px;;
+    width: 36px;
+    height: 36px;
+    :global(.background) {
+        fill: var(--color-black-squeeze);
+    }
+
+    :global(.icon) {
+        fill: var(--color-midnight);
+    }
+}
+
+.menu_item_text {
+    font-family: var(--font-open-sans);
+    color: var(--color-black-squeeze);
+
+    :global(.active) &,
+    .menu_item:hover & {
+        box-shadow: 0 2px 0 0 var(--color-black-squeeze);
+    }
+}
+

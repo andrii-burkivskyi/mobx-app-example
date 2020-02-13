@@ -1,0 +1,10 @@
+mutation UpdateProject($input: UpdateProjectInput!) {
+  data: updateProject(input: $input){
+    id
+    #keys
+    name
+    color 
+    url
+    #keys
+  }
+}

@@ -1,0 +1,15 @@
+query GetProjectsList($input: ProjectPaginationInput!){
+  data: projects(input: $input){
+    items {
+        id
+        #keys
+        name
+        color
+        url
+        #keys
+    }
+    page
+    take
+    totalItems
+  }
+}

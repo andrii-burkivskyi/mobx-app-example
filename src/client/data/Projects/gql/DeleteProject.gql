@@ -1,0 +1,3 @@
+mutation DeleteProject($input: DeleteProjectInput!) {
+  data: deleteProject(input: $input)
+}

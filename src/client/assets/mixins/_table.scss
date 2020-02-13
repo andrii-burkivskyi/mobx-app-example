@@ -1,0 +1,108 @@
+@mixin style_header() {
+    height: 36px;
+    width: 100%;
+    background-color: var(--root-second-color);
+}
+
+@mixin table_global($theme) {
+    :global .#{$theme} * {
+        @content;
+    }
+}
+
+@mixin table_wrapper($theme) {
+    :global .#{$theme} .public_fixedDataTable_main {
+        border: none;
+        @content;
+    }
+}
+
+@mixin table_header_cell($theme) {
+    :global .#{$theme} .public_fixedDataTable_header,
+    :global .#{$theme} .public_fixedDataTable_scrollbarSpacer,
+    :global .#{$theme} .public_fixedDataTable_header .public_fixedDataTableCell_main {
+        background-image: none;
+        @content;
+    }
+}
+
+@mixin  table_header_row($theme) {
+    :global .#{$theme} .public_fixedDataTable_header,
+    :global .#{$theme} .public_fixedDataTable_hasBottomBorder {
+        border: none;
+        @content;
+    }
+}
+
+@mixin table_body_row($theme) {
+    :global .#{$theme} .public_fixedDataTable_bodyRow {
+        background-color: transparent;
+        @content;
+    }
+    
+}
+
+@mixin table_body_highlighted_row($theme) {
+    :global .#{$theme} .public_fixedDataTableRow_highlighted {
+        background-color: transparent;
+        @content;
+    }
+}
+
+@mixin table_body_cell($them) {
+    :global .#{$theme} .public_fixedDataTableCell_main {
+        @content;
+    }
+}
+
+@mixin table_body_highlighted_cell($theme) {
+    :global .#{$theme} .public_fixedDataTableRow_highlighted .public_fixedDataTableCell_main {
+        @content;
+    }
+}
+
+@mixin table_scrollbar_vertical($theme) {
+    :global .#{$theme} .public_Scrollbar_main.public_Scrollbar_mainActive,
+    :global .#{$theme} .public_Scrollbar_main {
+        @content;
+    }
+}
+
+@mixin table_scrollbar_horizontal($theme) {
+    :global .#{$theme} .public_Scrollbar_mainOpaque,
+    :global .#{$theme} .public_Scrollbar_mainOpaque.public_Scrollbar_mainActive,
+    :global .#{$theme} .public_Scrollbar_mainOpaque:hover {
+        @content;
+    }
+}
+
+@mixin table_fixed_columns_divider($theme) {
+    :global .#{$theme} .public_fixedDataTableRow_fixedColumnsDivider {
+        @content;
+    }
+}
+
+@mixin table_column_shadow($theme) {
+    :global .#{$theme} .public_fixedDataTableRow_columnsShadow {
+        z-index: 100;
+        @content;
+    }
+}
+
+@mixin table_top_shadow($theme) {
+    :global .#{$theme} .public_fixedDataTable_topShadow {
+        @content;
+    }
+}
+
+@mixin table_bottom_shadow($theme) {
+    :global .#{$theme} .public_fixedDataTable_bottomShadow {
+        @content;
+    }
+}
+
+// column shadow
+
+// top shadow
+
+// bottom shadow

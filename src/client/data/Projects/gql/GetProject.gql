@@ -1,0 +1,10 @@
+query GetProject($id: Int!) {
+  data: project(id: $id){
+    id
+    #keys
+    name
+    color 
+    url
+    #keys
+  }
+}

@@ -1,0 +1,10 @@
+mutation CreateProject($input: CreateProjectInput!) {
+  data: createProject(input: $input){
+    id
+    #keys
+    name
+    color 
+    url
+    #keys
+  }
+}

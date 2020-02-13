@@ -1,0 +1,77 @@
+@import "../../../assets/index.scss";
+
+$theme: "default";
+
+:root {
+    --table-default-font-main: var(--font-open-sans);
+    --table-default-color-main: var(--color-black-squeeze);
+    --table-default-background-main: var(--color-elephant);
+    --table-default-border-main: var(--color-black-squeeze-10);
+    --table-default-shadow-from: var(--color-black-squeeze-10);
+    --table-default-shadow-to: transparent;
+}
+
+@include element("container", $theme) {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0;
+}
+
+@include table_global($theme) {
+    color: var(--table-default-color-main);
+    font-family: var(--table-default-font-main);
+}
+
+@include table_header_cell($theme) {
+    background-color: var(--table-default-background-main);
+    background-image: none;
+}
+
+@include table_header_row($theme) {
+    border-bottom: 2px solid var(--table-default-border-main);
+}
+
+@include table_body_row($theme) {
+    border-bottom: 1px solid var(--table-default-border-main);
+}
+
+@include table_body_cell($theme) {
+    background-color: var(--table-default-background-main);
+    border-color: var(--table-default-border-main);
+}
+
+@include table_body_highlighted_cell($theme) {
+    background-color: var(--table-default-background-main);
+}
+
+@include table_fixed_columns_divider($theme) {
+    border-color: var(--table-default-border-main);
+}
+
+@include table_column_shadow($theme) {
+    width: 5px;
+    background-image: linear-gradient(
+        90deg,
+        var(--table-default-shadow-from),
+        var(--table-default-shadow-to)
+    );
+}
+
+@include table_top_shadow($theme) {
+    height: 4px;
+    background-image: linear-gradient(
+        180deg,
+        var(--table-default-shadow-from),
+        var(--table-default-shadow-to)
+    );
+}
+
+@include table_bottom_shadow($theme) {
+    height: 10px;
+    margin-top: -10px;
+    background-image: linear-gradient(
+        0deg,
+        var(--table-default-shadow-from),
+        var(--table-default-shadow-to)
+    );
+}

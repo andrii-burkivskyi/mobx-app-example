@@ -1,0 +1,13 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "database": "./public/server/database.db",
+            "dialect": "SQLite",
+            "isActive": true,
+            "isConnected": true,
+            "name": "my_db"
+        }
+    ]
+}

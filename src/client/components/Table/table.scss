@@ -1,0 +1,16 @@
+@import "./themes/default.scss";
+
+:global div.public_fixedDataTable_main {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+:global div.public_Scrollbar_main.public_Scrollbar_mainActive,
+:global div.default .public_Scrollbar_main {
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "jsx": "react",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "baseUrl": "../../src",
+    "outDir": "../../public/server",
+    "paths": {
+      "server/*": ["server/*"]
+    },
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "incremental": true,
+    "allowJs": true
+  },
+  
+  "include": [
+    "../../src/server/**/*"
+  ],
+  "exclude": [
+    "../../node_modules/**/*"
+  ]
+}

@@ -1,0 +1,60 @@
+@import "../../assets/index.scss";
+
+:root {
+    --root-main-color: var(--color-elephant);
+    --root-second-color: var(--color-midnight);
+    --root-white-color: var(--color-black-squeeze);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--root-main-color);
+}
+
+.header {
+    display: flex;
+    height: 64px;
+    background-color: var(--root-second-color);
+}
+
+.logo {
+    display: block;
+    height: 64px;
+    width: 64px;
+    background-color: var(--root-white-color);
+
+    svg {
+        margin: 5px;
+    }
+
+    :global(.background) {
+        fill: var(--root-second-color);
+    }
+
+    :global(.icon) {
+        fill: var(--root-white-color);
+    }
+}
+
+.body {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    max-width: 64px;
+    min-width: 64px;
+    background-color: var(--root-second-color);
+}
+
+.content {
+    display: flex;
+    flex: 1 1 0;
+}
