@@ -110,7 +110,7 @@
     "graphql": "^14.5.8",
     "graphql-tools": "^4.0.6",
     "history": "^4.10.1",
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.5.0",
     "keymaster": "^1.6.2",
     "lodash.isequal": "^4.5.0",
     "lodash.isplainobject": "^4.0.6",
